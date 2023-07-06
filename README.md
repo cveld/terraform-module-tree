@@ -9,6 +9,12 @@ This cli takes a `workloads.json` file that contains an array with absolute path
 ]
 ```
 
+Run it as follows:
+
+```
+terraform-module-tree workloads.json
+```
+
 It starts crawling all those root modules and spits out a json with a map of all crawled folders towards a list of all root modules that use this folder.
 
 E.g.
@@ -65,7 +71,7 @@ E.g.
 }
 ```
 
-This output can be used in combination with the output of `git diff HEAD~1 HEAD` to detect which root 
+This output can be used in combination with the output of `git diff --name-status HEAD~1 HEAD` to detect which root 
 modules require a `terraform plan`.
 
 ### Developers
