@@ -15,6 +15,12 @@ Run it as follows:
 terraform-module-tree workloads.json
 ```
 
+There is an npm package published which you can run as follows with only nodejs as a prerequisite:
+```
+npx -y @cveld/terraform-module-tree@0.0.1-preview.4 -- workloads.json
+```
+
+
 It starts crawling all those root modules and spits out a json with a map of all crawled folders towards a list of all root modules that use this folder.
 
 E.g.
