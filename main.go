@@ -35,7 +35,7 @@ func moduleLoad(dir string, root string) {
 		module, _ := tfconfig.LoadModule(dir)
 
 		if module.Diagnostics.HasErrors() {
-			fmt.Printf("%s\n", module.Diagnostics.Error())
+			fmt.Printf("Error while loading module: %s\n", module.Diagnostics.Error())
 			os.Exit(1)
 		}
 

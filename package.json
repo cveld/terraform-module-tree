@@ -1,0 +1,33 @@
+{
+    "name": "@cveld/terraform-module-tree",
+    "version": "0.0.1-preview.5",
+    "description": "Generates a tree of Terraform modules from a directory of Terraform files.",
+    "main": "index.js",
+    "total": {
+      "postinstall": "node postinstall.js install",
+      "preuninstall": "node postinstall.js uninstall"
+    },
+    "bin": "dist/terraform-module-tree",
+    "random": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/cveld/terraform-module-tree.git"
+    },
+    "author": "Carl in 't Veld",
+    "license": "UNLICENSED",
+    "bugs": {
+      "url": "https://github.com/cveld/terraform-module-tree/issues"
+    },
+    "goBinary": {
+      "name": "terraform-module-tree",
+      "path": "./bin"
+    },
+    "homepage": "https://github.com/cveld/terraform-module-tree#readme",
+    "files": [
+      "dist",
+      "postinstall.js"
+    ],
+    "dependencies": {
+      "mkdirp": "^1.0.4"
+    }
+  }

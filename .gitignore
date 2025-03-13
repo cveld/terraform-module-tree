@@ -400,3 +400,4 @@ FodyWeavers.xsd
 # Workload
 output.json
 terraform-module-tree.exe
+terraform-module-tree

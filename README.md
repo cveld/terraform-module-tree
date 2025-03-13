@@ -17,7 +17,7 @@ terraform-module-tree workloads.json
 
 There is an npm package published which you can run as follows with only nodejs as a prerequisite:
 ```
-npx -y @cveld/terraform-module-tree@0.0.1-preview.4 -- workloads.json
+npx -y @cveld/terraform-module-tree@0.0.1-preview.5 -- workloads.json
 ```
 
 
@@ -87,3 +87,11 @@ Build the solution with:
 go build
 ```
 
+Publish the solution with:
+```
+./build.ps1
+npm publish
+```
+
+### Release notes
+Version 0.0.1-preview.5 supports terraform provider functions.
